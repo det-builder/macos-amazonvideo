@@ -20,7 +20,6 @@
 		55FD04A723AAFAAC00707000 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD04A623AAFAAC00707000 /* WindowController.swift */; };
 		55FD04A923AAFAD700707000 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD04A823AAFAD700707000 /* TitleView.swift */; };
 		55FD04AB23AAFAEC00707000 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD04AA23AAFAEC00707000 /* ActivityIndicator.swift */; };
-		55FD04AD23AAFB1500707000 /* NSRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD04AC23AAFB1500707000 /* NSRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		55FD04A623AAFAAC00707000 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		55FD04A823AAFAD700707000 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		55FD04AA23AAFAEC00707000 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		55FD04AC23AAFB1500707000 /* NSRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +131,6 @@
 				55FD04AA23AAFAEC00707000 /* ActivityIndicator.swift */,
 				55FD04A623AAFAAC00707000 /* WindowController.swift */,
 				55FD04A823AAFAD700707000 /* TitleView.swift */,
-				55FD04AC23AAFB1500707000 /* NSRect.swift */,
 				55C91D3B23AAF7A5001A8249 /* Assets.xcassets */,
 				55C91D4323AAF7A5001A8249 /* Info.plist */,
 				55C91D4423AAF7A5001A8249 /* AmazonVideo.entitlements */,
@@ -312,7 +309,6 @@
 			files = (
 				55FD04A523AAFA9000707000 /* ViewController.swift in Sources */,
 				55FD04AB23AAFAEC00707000 /* ActivityIndicator.swift in Sources */,
-				55FD04AD23AAFB1500707000 /* NSRect.swift in Sources */,
 				55FD04A723AAFAAC00707000 /* WindowController.swift in Sources */,
 				55C91D3823AAF7A5001A8249 /* AppDelegate.swift in Sources */,
 				55FD04A923AAFAD700707000 /* TitleView.swift in Sources */,
