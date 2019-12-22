@@ -5,6 +5,7 @@
 	};
 	objectVersion = 52;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		5516A7B623AF06BE00297B00 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FD04A023AAF8FF00707000 /* Sparkle.framework */; };
 		5516A7B723AF06BE00297B00 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FD04A023AAF8FF00707000 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
