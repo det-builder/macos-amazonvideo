@@ -75,7 +75,7 @@ class ViewController: NSViewController {
             return
         }
 
-        webView.evaluateJavaScript("window.jellystyle.focusSearch();", completionHandler: didEvaluateJavascript)
+        //webView.evaluateJavaScript("window.jellystyle.focusSearch();", completionHandler: didEvaluateJavascript)
     }
 
 }
@@ -141,7 +141,6 @@ extension ViewController: WindowControllerFullscreenDelegate {
 
 }
 
-// DT - added this
 extension ViewController: WKScriptMessageHandler {
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
@@ -159,41 +158,6 @@ extension ViewController: WKScriptMessageHandler {
 
 }
 
-/*
-extension ViewController: WKScriptMessageHandler {
-
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if message.name == "jellystyle", let dictionary = message.body as? [String: Any] {
-            displayingControls = (dictionary["controlsVisible"] as? NSNumber)?.boolValue ?? false
-            displayingOverlay = (dictionary["overlayVisible"] as? NSNumber)?.boolValue ?? false
-            displayingHeader = (dictionary["hasHeader"] as? NSNumber)?.boolValue ?? false
-            canSearch = (dictionary["hasSearch"] as? NSNumber)?.boolValue ?? false
-
-            if let size = dictionary["videoSize"] as? [NSNumber] {
-                let aspectRatio = NSSize(width: size[0].doubleValue, height: size[1].doubleValue)
-                windowController?.update(aspectRatio: aspectRatio)
-            }
-            else {
-                windowController?.update(aspectRatio: nil)
-            }
-
-            titleView?.shouldHideWhenInactive = !(displayingControls || displayingHeader)
-        }
-        else if message.name == "requestFullscreen", let boolValue = (message.body as? NSNumber)?.boolValue, let window = view.window {
-            guard window.styleMask.contains(.fullScreen) != boolValue else {
-                return
-            }
-
-            window.toggleFullScreen(self)
-        }
-        else {
-            print(message.name, message.body)
-        }
-    }
-
-}
-
- */
 extension ViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
@@ -232,6 +196,7 @@ extension ViewController: WKNavigationDelegate {
             print(response)
         }
     }
+
 
 }
 
